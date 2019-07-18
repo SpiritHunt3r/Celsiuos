@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Celsious</string>
+    <string name="descp_logoletras">Logo de letras Celsious</string>
+    <string name="content_sign_up">Regístrate</string>
+    <string name="content_already_account">¿Ya tienes una cuenta?</string>
+    <string name="link_sign_in"><b><u>Iniciar sesión</u></b></string>
+</resources>
