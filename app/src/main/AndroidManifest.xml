@@ -20,6 +20,8 @@
         </activity>
         <activity
             android:name=".startscreen"/>
+        <activity
+            android:name=".loginscreen"/>
 
     </application>
 

@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">Celsious</string>
     <string name="descp_logoletras">Logo de letras Celsious</string>
+    <string name="descp_carousel_views">Vista para el carousel</string>
+    <string name="text_corousel_1"><b>Te damos la bienvenida.</b></string>
+    <string name="text_corousel_2">El historial de tu familia en tu smartphone.</string>
+    <string name="text_corousel_3">Registra las temperaturas y el control de las comidas.</string>
+    <string name="text_corousel_4">Análisis y asesoramiento médico teniendo en cuenta la edad del niño.</string>
     <string name="content_sign_up">Regístrate</string>
+    <string name="content_sign_in">Iniciar sesión</string>
+    <string name="content_email">Dirección de correo electrónico</string>
+    <string name="content_password">Contraseña</string>
     <string name="content_already_account">¿Ya tienes una cuenta?</string>
     <string name="link_sign_in"><b><u>Iniciar sesión</u></b></string>
+    <string name="link_forgot_password"><b><u>¿Has olvidado tu contraseña?</u></b></string>
+    <string name="titulo_sign_in">Conectarse</string>
 </resources>
