@@ -2,16 +2,32 @@
     <string name="app_name">Celsious</string>
     <string name="descp_logoletras">Logo de letras Celsious</string>
     <string name="descp_carousel_views">Vista para el carousel</string>
+    <string name="descp_iconos_genero">Icono para idenficar uno de los generos</string>
     <string name="text_corousel_1"><b>Te damos la bienvenida.</b></string>
     <string name="text_corousel_2">El historial de tu familia en tu smartphone.</string>
     <string name="text_corousel_3">Registra las temperaturas y el control de las comidas.</string>
     <string name="text_corousel_4">Análisis y asesoramiento médico teniendo en cuenta la edad del niño.</string>
+    <string name="text_sign_up"><b>Gracias a estos datos podemos ofrecerte recomendaciones personalizadas</b></string>
     <string name="content_sign_up">Regístrate</string>
     <string name="content_sign_in">Iniciar sesión</string>
+    <string name="content_create_profile">Crear</string>
     <string name="content_email">Dirección de correo electrónico</string>
     <string name="content_password">Contraseña</string>
+    <string name="content_check_password">Verificación de contraseña</string>
+    <string name="content_name">Nombre</string>
+    <string name="content_lastname">Apellidos</string>
+    <string name="content_birthday">Fecha de nacimiento</string>
+    <string name="content_sex">Sexo</string>
+    <string name="content_height">Estatura (cm)</string>
+    <string name="content_weight">Peso (kg)</string>
     <string name="content_already_account">¿Ya tienes una cuenta?</string>
     <string name="link_sign_in"><b><u>Iniciar sesión</u></b></string>
     <string name="link_forgot_password"><b><u>¿Has olvidado tu contraseña?</u></b></string>
     <string name="titulo_sign_in">Conectarse</string>
+    <string name="titulo_profile">Mi Perfil</string>
+    <string name="titulo_sign_up">Registro</string>
+    <string name="terms_and_condicions">Acepto los Términos y Condiciones, Declaración de Privacidad y Suplemento de Privacidad de Celsious para Productos y Servicios de Salud Digital.</string>
+    <string name="data_usage">Acepto que Celsious procese mis datos, incluidas mis métricas, tal y como se describe en el Suplemento de privacidad para productos y servidios de sanidad digital y en la Política de privacidad de Celsious.</string>
+
+
 </resources>

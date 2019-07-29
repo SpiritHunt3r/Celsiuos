@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/logo_aplicacion"
         android:supportsRtl="true"
         android:theme="@style/HiddenTitleTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Pantallas.MainActivity">
             <intent-filter>
 
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +19,13 @@
 
         </activity>
         <activity
-            android:name=".startscreen"/>
+            android:name=".Pantallas.startscreen"/>
         <activity
-            android:name=".loginscreen"/>
+            android:name=".Pantallas.loginscreen"/>
+        <activity
+            android:name=".Pantallas.createprofilescreen"/>
+        <activity
+            android:name=".Pantallas.registerscreen"/>
 
     </application>
 

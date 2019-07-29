@@ -1,10 +1,11 @@
-package com.example.celsiuscloud;
+package com.example.celsiuscloud.Pantallas;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+
+import com.example.celsiuscloud.R;
 
 public class MainActivity extends AppCompatActivity {
 

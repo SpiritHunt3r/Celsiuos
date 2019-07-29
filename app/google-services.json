@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "593830998164",
+    "firebase_url": "https://baby-f2523.firebaseio.com",
+    "project_id": "baby-f2523",
+    "storage_bucket": "baby-f2523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593830998164:android:b7e2cb21f475b09d",
+        "android_client_info": {
+          "package_name": "com.example.celsiuscloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593830998164-inurqnrreb9738cdot2jk1qv1t1cnlgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.celsiuscloud",
+            "certificate_hash": "f088f0dbd0b544f4924b18fc37fc2fc75a77a3ed"
+          }
+        },
+        {
+          "client_id": "593830998164-4h8anas18gm54faiek92632ikuut6mlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwVF_Lk-xT73A1n7TpP8zzqifao1y0nLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593830998164-4h8anas18gm54faiek92632ikuut6mlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593830998164:android:209fb3e983221ef9",
+        "android_client_info": {
+          "package_name": "com.example.termometro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593830998164-668c1201aebc2foubdukcqjkcbbsn1r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.termometro",
+            "certificate_hash": "9fe9b8ff09820cf85cca84eda4a8b0be92e967c6"
+          }
+        },
+        {
+          "client_id": "593830998164-4h8anas18gm54faiek92632ikuut6mlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwVF_Lk-xT73A1n7TpP8zzqifao1y0nLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593830998164-4h8anas18gm54faiek92632ikuut6mlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

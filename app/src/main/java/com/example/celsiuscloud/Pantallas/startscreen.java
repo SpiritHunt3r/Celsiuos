@@ -1,10 +1,11 @@
-package com.example.celsiuscloud;
+package com.example.celsiuscloud.Pantallas;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.celsiuscloud.R;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ViewListener;
 
@@ -27,6 +28,11 @@ public class startscreen extends AppCompatActivity {
 
     public void openLogin(View v){
         Intent i = new Intent(this,loginscreen.class);
+        startActivity(i);
+    }
+
+    public void openRegister(View v){
+        Intent i = new Intent(this, registerscreen.class);
         startActivity(i);
     }
 
