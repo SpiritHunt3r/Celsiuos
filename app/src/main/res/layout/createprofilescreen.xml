@@ -106,7 +106,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/descp_iconos_genero"
             android:onClick="selectMen"
-            app:srcCompat="@drawable/hombreicono" />
+            app:srcCompat="@drawable/masculino" />
 
         <ImageView
             android:id="@+id/mujericono"
@@ -115,7 +115,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/descp_iconos_genero"
             android:onClick="selectWomen"
-            app:srcCompat="@drawable/mujericono" />
+            app:srcCompat="@drawable/femenino" />
     </LinearLayout>
 
     <EditText

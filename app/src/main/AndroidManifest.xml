@@ -26,6 +26,8 @@
             android:name=".Pantallas.createprofilescreen"/>
         <activity
             android:name=".Pantallas.registerscreen"/>
+        <activity
+            android:name=".Pantallas.avatar_userpickerscreen"/>
 
     </application>
 

@@ -1,7 +1,10 @@
 package com.example.celsiuscloud.Pantallas;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,16 +27,14 @@ import java.util.regex.Pattern;
 
 public class registerscreen extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private DatabaseReference ref;
-    private FirebaseUser firebaseUser;
+
+    private SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registerscreen);
-        mAuth = FirebaseAuth.getInstance();
-        ref = FirebaseDatabase.getInstance().getReference();
+
 
     }
 
@@ -86,25 +87,19 @@ public class registerscreen extends AppCompatActivity {
             final Usuario n = new Usuario(Nombre.getText().toString(),Apellidos.getText().toString());
             String ActualEmail = email;
             String ActualPass = Password.getText().toString();
-            mAuth.createUserWithEmailAndPassword(ActualEmail,ActualPass)
-                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful())
-                            {
-                                firebaseUser = mAuth.getCurrentUser();
 
-                                ref.child("Usuarios").child(firebaseUser.getUid()).child("Personal Info").setValue(n);
-                                Toast.makeText(getApplicationContext(),"Usuario creado correctamente",Toast.LENGTH_SHORT).show();
-                                finish();
-                                Intent i = new Intent(getApplicationContext(),loginscreen.class);
-                                startActivity(i);
-                            }
-                            else{
-                                Toast.makeText(getApplicationContext(),"No es posible crear el usuario",Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
+            sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("Nombre",Nombre.getText().toString());
+            editor.putString("Apellidos",Apellidos.getText().toString());
+            editor.putString("Email",ActualEmail);
+            editor.putString("Pass",ActualPass);
+            editor.commit();
+            Intent i = new Intent(this,avatar_userpickerscreen.class);
+            startActivity(i);
+
+
+
         }
     }
 }
