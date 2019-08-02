@@ -53,7 +53,6 @@ public class avatar_userpickerscreen extends AppCompatActivity {
 
     private void cretareuser(int avt){
         u.setAvatar(avt);
-        final String TAG = "a";
         String email = sharedPref.getString("Email","");
         String pass = sharedPref.getString("Pass","");
 
@@ -70,7 +69,7 @@ public class avatar_userpickerscreen extends AppCompatActivity {
                             ref.child("Usuarios").child(firebaseUser.getUid()).child("Personal Info").setValue(u);
                             Toast.makeText(getApplicationContext(),"Usuario creado correctamente",Toast.LENGTH_SHORT).show();
                             finish();
-                            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                            Intent i = new Intent(getApplicationContext(),loginscreen.class);
                             startActivity(i);
                         }
                         else{

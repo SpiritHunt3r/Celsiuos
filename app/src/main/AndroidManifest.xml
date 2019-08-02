@@ -28,6 +28,8 @@
             android:name=".Pantallas.registerscreen"/>
         <activity
             android:name=".Pantallas.avatar_userpickerscreen"/>
+        <activity
+            android:name=".Pantallas.clientescreen"/>
 
     </application>
 
