@@ -3,6 +3,7 @@
     <string name="descp_logoletras">Logo de letras Celsious</string>
     <string name="descp_carousel_views">Vista para el carousel</string>
     <string name="descp_iconos_genero">Icono para idenficar uno de los generos</string>
+    <string name="descp_avatar_container">Contenedor de avatar #</string>
     <string name="text_corousel_1"><b>Te damos la bienvenida.</b></string>
     <string name="text_corousel_2">El historial de tu familia en tu smartphone.</string>
     <string name="text_corousel_3">Registra las temperaturas y el control de las comidas.</string>
@@ -26,6 +27,7 @@
     <string name="titulo_sign_in">Conectarse</string>
     <string name="titulo_profile">Mi Perfil</string>
     <string name="titulo_sign_up">Registro</string>
+    <string name="titulo_avatarpick">Seleccione su avatar</string>
     <string name="terms_and_condicions">Acepto los Términos y Condiciones, Declaración de Privacidad y Suplemento de Privacidad de Celsious para Productos y Servicios de Salud Digital.</string>
     <string name="data_usage">Acepto que Celsious procese mis datos, incluidas mis métricas, tal y como se describe en el Suplemento de privacidad para productos y servidios de sanidad digital y en la Política de privacidad de Celsious.</string>
 

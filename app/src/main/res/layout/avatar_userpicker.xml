@@ -1,8 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/titulo_avatarpick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
 
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <LinearLayout
+            android:id="@+id/avatar1-3"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/avatar1view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/descp_avatar_container"
+                android:onClick="avatarpick1"
+                app:srcCompat="@drawable/avatar1" />
+
+            <ImageView
+                android:id="@+id/avatar2view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/descp_avatar_container"
+                android:onClick="avatarpick2"
+                app:srcCompat="@drawable/avatar2" />
+
+            <ImageView
+                android:id="@+id/avatar3view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/descp_avatar_container"
+                android:onClick="avatarpick3"
+                app:srcCompat="@drawable/avatar3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/avatar4-6"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/avatar4view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/descp_avatar_container"
+                android:onClick="avatarpick4"
+                app:srcCompat="@drawable/avatar4" />
+
+            <ImageView
+                android:id="@+id/avatar5view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/descp_avatar_container"
+                android:onClick="avatarpick5"
+                app:srcCompat="@drawable/avatar5" />
+
+            <ImageView
+                android:id="@+id/avatar6view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/descp_avatar_container"
+                android:onClick="avatarpick6"
+                app:srcCompat="@drawable/avatar6" />
+        </LinearLayout>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
