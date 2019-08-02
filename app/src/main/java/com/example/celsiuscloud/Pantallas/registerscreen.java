@@ -1,12 +1,11 @@
 package com.example.celsiuscloud.Pantallas;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Switch;
@@ -14,13 +13,6 @@ import android.widget.Toast;
 
 import com.example.celsiuscloud.Clases.Usuario;
 import com.example.celsiuscloud.R;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -73,6 +65,9 @@ public class registerscreen extends AppCompatActivity {
         }
         else if (Password2.getText().toString().equals("")){
             Toast.makeText(getApplicationContext(),"Verifique su Contraseña",Toast.LENGTH_SHORT).show();
+        }
+        else if (Password2.getText().toString().length()<6){
+            Toast.makeText(getApplicationContext(),"La contraseña debe poseer mínimo 6 caracteres",Toast.LENGTH_SHORT).show();
         }
         else if (!(Password.getText().toString().equals(Password2.getText().toString()))){
             Toast.makeText(getApplicationContext(),"Las contraseñas no coinciden",Toast.LENGTH_SHORT).show();
