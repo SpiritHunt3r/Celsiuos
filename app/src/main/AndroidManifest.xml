@@ -29,8 +29,11 @@
         <activity
             android:name=".Pantallas.avatar_userpickerscreen"/>
         <activity
+            android:name=".Pantallas.avatar_profilepickerscreen"/>
+        <activity
             android:name=".Pantallas.clientescreen"/>
-
+        <activity
+            android:name=".Pantallas.perfilscreen"/>
     </application>
 
 </manifest>

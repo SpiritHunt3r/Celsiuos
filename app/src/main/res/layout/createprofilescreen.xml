@@ -106,6 +106,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/descp_iconos_genero"
             android:onClick="selectMen"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/masculino" />
 
         <ImageView
@@ -115,6 +116,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/descp_iconos_genero"
             android:onClick="selectWomen"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/femenino" />
     </LinearLayout>
 

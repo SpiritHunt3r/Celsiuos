@@ -7,22 +7,25 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".Pantallas.clientescreen">
+    tools:context=".Pantallas.perfilscreen">
 
     <ImageButton
         android:id="@+id/bleBTN"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/avatarshows"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068"
-        app:srcCompat="@android:drawable/stat_sys_data_bluetooth" />
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageButton
         android:id="@+id/logoutBTN"
@@ -92,23 +95,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/avatarshows"></FrameLayout>
 
-    <ImageButton
-        android:id="@+id/addBTN"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:onClick="addPerfil"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/avatarshows"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toEndOf="@+id/bleBTN"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_contenedor"
+        app:layout_constraintEnd_toEndOf="@+id/frame_contenedor"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bleBTN"
+        app:layout_constraintVertical_bias="0.984"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
 

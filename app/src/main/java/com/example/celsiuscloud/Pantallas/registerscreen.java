@@ -2,6 +2,7 @@ package com.example.celsiuscloud.Pantallas;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import androidx.annotation.NonNull;
@@ -26,7 +27,6 @@ public class registerscreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registerscreen);
-
 
     }
 
@@ -79,7 +79,6 @@ public class registerscreen extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Debe aceptar el Uso de Información",Toast.LENGTH_SHORT).show();
         }
         else{
-            final Usuario n = new Usuario(Nombre.getText().toString(),Apellidos.getText().toString());
             String ActualEmail = email;
             String ActualPass = Password.getText().toString();
 

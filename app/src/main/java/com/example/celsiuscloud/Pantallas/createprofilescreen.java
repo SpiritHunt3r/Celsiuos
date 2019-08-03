@@ -1,9 +1,14 @@
 package com.example.celsiuscloud.Pantallas;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -18,6 +23,7 @@ public class createprofilescreen extends AppCompatActivity {
 
 
     private String selectedGender = new String();
+    private SharedPreferences sharedPref;
 
 
     @Override
@@ -93,7 +99,17 @@ public class createprofilescreen extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Ingrese su Peso",Toast.LENGTH_SHORT).show();
         }
         else{
-
+            sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("Nombre",Nombre.getText().toString());
+            editor.putString("Apellidos",Apellidos.getText().toString());
+            editor.putString("FechaNacimiento",Fecha.getText().toString());
+            editor.putString("Genero",selectedGender);
+            editor.putInt("Estatura",Integer.valueOf(Estatura.getText().toString()));
+            editor.putInt("Peso",Integer.valueOf(Peso.getText().toString()));
+            editor.commit();
+            Intent i = new Intent(this,avatar_profilepickerscreen.class);
+            startActivity(i);
         }
     }
 }
