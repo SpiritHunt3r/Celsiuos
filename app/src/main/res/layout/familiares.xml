@@ -9,6 +9,27 @@
     android:orientation="vertical"
     tools:context=".Pantallas.clientescreen">
 
+    <Button
+        android:id="@+id/crearBtn3"
+        android:layout_width="114dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_loguot"
+        android:onClick="exitapp"
+        android:text="@string/titulo_logout"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/frame_contenedor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/avatarshows"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+
     <ImageButton
         android:id="@+id/bleBTN"
         android:layout_width="50dp"
@@ -17,33 +38,13 @@
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
         android:background="@android:color/transparent"
+        android:onClick="onBLE"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068"
         app:srcCompat="@android:drawable/stat_sys_data_bluetooth" />
-
-    <ImageButton
-        android:id="@+id/logoutBTN"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:onClick="exitapp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.712"
-        app:layout_constraintStart_toEndOf="@+id/avatarshows"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058"
-        app:srcCompat="@android:drawable/radiobutton_off_background" />
 
     <ImageView
         android:id="@+id/avatarshows"

@@ -1,7 +1,7 @@
 package com.example.celsiuscloud.Clases;
 
 
-import java.util.Random;
+import java.util.UUID;
 
 public class Perfil {
     private String id;
@@ -17,15 +17,9 @@ public class Perfil {
     }
 
     public Perfil(String nombre, String apellidos, String fecha, String sexo, int estatura, int peso) {
-        Random rand = new Random();
-        char[] chars = new char[10];
-        for(int i=0;i<chars.length;i++) {
-            chars[i] = (char) rand.nextInt(65536);
-            if (!Character.isValidCodePoint(chars[i]))
-                i--;
-        }
-        String s = new String(chars);
-        this.id = s;
+        UUID uuid = UUID.randomUUID();
+        String randomUUIDString = uuid.toString();
+        this.id = randomUUIDString;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fecha = fecha;

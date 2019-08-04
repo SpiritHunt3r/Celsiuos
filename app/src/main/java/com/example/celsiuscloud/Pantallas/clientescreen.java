@@ -1,11 +1,13 @@
 package com.example.celsiuscloud.Pantallas;
 
+import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,8 @@ public class clientescreen extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private TextView activo;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,5 +74,14 @@ public class clientescreen extends AppCompatActivity {
         Intent i = new Intent(clientescreen.this, createprofilescreen.class);
         startActivity(i);
     }
+
+    public void onBLE(View v){
+
+        Intent i = new Intent(clientescreen.this, blescreen.class);
+        startActivity(i);
+    }
+
+
+
 
 }

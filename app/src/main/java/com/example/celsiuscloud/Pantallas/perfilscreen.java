@@ -3,10 +3,14 @@ package com.example.celsiuscloud.Pantallas;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +21,7 @@ import com.example.celsiuscloud.Clases.Perfil;
 import com.example.celsiuscloud.Fragments.ActividadesFragment;
 import com.example.celsiuscloud.Fragments.FamiliaresFragment;
 import com.example.celsiuscloud.R;
+import com.google.android.material.internal.NavigationMenu;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +29,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import io.github.yavski.fabspeeddial.FabSpeedDial;
+import io.github.yavski.fabspeeddial.SimpleMenuListenerAdapter;
 
 public class perfilscreen extends AppCompatActivity {
 
@@ -33,26 +41,49 @@ public class perfilscreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.familiares);
+        setContentView(R.layout.actividades);
         getInfo();
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        /*FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frame_contenedor, new ActividadesFragment()).commit();
+        transaction.replace(R.id.frame_contenedor, new ActividadesFragment()).commit();*/
 
+        FabSpeedDial fabSpeedDial = (FabSpeedDial) findViewById(R.id.fab_speed_dial);
+        fabSpeedDial.setMenuListener(new SimpleMenuListenerAdapter() {
+            @Override
+            public boolean onPrepareMenu(NavigationMenu navigationMenu) {
+                // TODO: Do something with yout menu items, or return false if you don't want to show them
+                return true;
+            }
 
+            @Override
+            public boolean onMenuItemSelected(MenuItem menuItem){
+                String option = menuItem.getTitle().toString();
+                if (option.equals("Nota")){
+
+                }
+                else if (option.equals("Sintoma")){
+
+                }
+                else if (option.equals("Foto")){
+
+                }
+
+                return true;
+            }
+        });
     }
 
     private void getInfo(){
         auth = FirebaseAuth.getInstance();
         final FirebaseUser user = auth.getCurrentUser();
         DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
-
-        final String perfil = sharedPref.getString("Nombre","");
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        final String perfil = sharedPref.getString("ID_Perfil","");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                Perfil actual = dataSnapshot.child("Usuarios").child(user.getUid()).child("Familiares").child(perfil).getValue(Perfil.class);
+                Perfil actual = dataSnapshot.child("Usuarios").child(user.getUid()).child("Familiares").child(perfil).child("Perfil").getValue(Perfil.class);
                 ImageView avatar = findViewById(R.id.avatarshows);
                 avatar.setImageResource(actual.getAvatar());
                 TextView nombre = findViewById(R.id.activoTxT);
@@ -72,8 +103,12 @@ public class perfilscreen extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void addPerfil (View v){
-        //Crear acciones
+    public void backapp (View v){
+
+        Intent i = new Intent(perfilscreen.this, clientescreen.class);
+        startActivity(i);
     }
+
+
 
 }

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,7 @@ public class FamiliaresFragment extends Fragment {
                 sharedPreferences = PreferenceManager.getDefaultSharedPreferences(rootView.getContext());
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("ID_Perfil",temp.getId()).commit();
+                Log.d("aaaaaaaaaaaaaaaa",temp.getId());
                 Intent n = new Intent(getContext(), perfilscreen.class);
                 startActivity(n);
 
