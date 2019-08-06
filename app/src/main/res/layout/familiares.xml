@@ -30,22 +30,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.763" />
 
-    <ImageButton
-        android:id="@+id/bleBTN"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:onClick="onBLE"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068"
-        app:srcCompat="@android:drawable/stat_sys_data_bluetooth" />
-
     <ImageView
         android:id="@+id/avatarshows"
         android:layout_width="108dp"
@@ -87,7 +71,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
-        android:background="@android:color/white"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,8 +90,7 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/avatarshows"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toEndOf="@+id/bleBTN"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.057"
         app:srcCompat="@android:drawable/ic_menu_add" />

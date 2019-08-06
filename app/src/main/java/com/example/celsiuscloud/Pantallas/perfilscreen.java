@@ -44,9 +44,9 @@ public class perfilscreen extends AppCompatActivity {
         setContentView(R.layout.actividades);
         getInfo();
 
-        /*FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frame_contenedor, new ActividadesFragment()).commit();*/
+        transaction.replace(R.id.frame_contenedor, new ActividadesFragment()).commit();
 
         FabSpeedDial fabSpeedDial = (FabSpeedDial) findViewById(R.id.fab_speed_dial);
         fabSpeedDial.setMenuListener(new SimpleMenuListenerAdapter() {
@@ -60,13 +60,20 @@ public class perfilscreen extends AppCompatActivity {
             public boolean onMenuItemSelected(MenuItem menuItem){
                 String option = menuItem.getTitle().toString();
                 if (option.equals("Nota")){
-
+                    Intent i = new Intent(perfilscreen.this, addnota.class);
+                    startActivity(i);
                 }
                 else if (option.equals("Sintoma")){
-
+                    Intent i = new Intent(perfilscreen.this, addsintoma.class);
+                    startActivity(i);
                 }
                 else if (option.equals("Foto")){
-
+                    Intent i = new Intent(perfilscreen.this, addfoto.class);
+                    startActivity(i);
+                }
+                else if (option.equals("Temperatura")){
+                    Intent i = new Intent(perfilscreen.this, addtemperatura.class);
+                    startActivity(i);
                 }
 
                 return true;

@@ -33,5 +33,35 @@
     <string name="titulo_avatarpick">Seleccione su avatar</string>
     <string name="terms_and_condicions">Acepto los Términos y Condiciones, Declaración de Privacidad y Suplemento de Privacidad de Celsious para Productos y Servicios de Salud Digital.</string>
     <string name="data_usage">Acepto que Celsious procese mis datos, incluidas mis métricas, tal y como se describe en el Suplemento de privacidad para productos y servidios de sanidad digital y en la Política de privacidad de Celsious.</string>
-
+    <string name="note">Nota</string>
+    <string name="picture">Foto</string>
+    <string name="syntom">Sintoma</string>
+    <string name="tempeture">Temperatura</string>
+    <string name="act_titulo">Titulo</string>
+    <string name="act_decsc">Descripción</string>
+    <string name="not_decsc">Sin Descripción</string>
+    <string name="add">Añadir</string>
+    <string-array name="sintomas">
+        <item>DIARREA (AGUDA)</item>
+        <item>DIARREA (MODERADO)</item>
+        <item>DOLOR DE CABEZA (AGUDA)</item>
+        <item>DOLOR DE CABEZA (MODERADO)</item>
+        <item>DOLOR DE ABDOMINAL (AGUDA)</item>
+        <item>DOLOR DE ABDOMINAL (MODERADO)</item>
+        <item>RIGIDEZ EN EL CUELLO</item>
+        <item>DETERIORO GENERAL DE LA SALUD</item>
+        <item>CONVULSIONES</item>
+        <item>SARPULLIDO</item>
+        <item>DOLOR DE GARGANTA</item>
+        <item>NÁUSEAS</item>
+        <item>ESCALOFRÍOS</item>
+        <item>TOS</item>
+        <item>DOLORES EN EL CUERPO</item>
+        <item>DOLOR DE OÍDOS</item>
+        <item>CONGESTIÓN NASAL</item>
+        <item>AFONÍA</item>
+        <item>ESTORNUDOS</item>
+        <item>GOTEO NASAL</item>
+        <item>DIFICULTAD PARA RESPIRAR</item>
+    </string-array>
 </resources>

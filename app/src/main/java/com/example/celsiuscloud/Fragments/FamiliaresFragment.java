@@ -51,7 +51,6 @@ public class FamiliaresFragment extends Fragment {
                 sharedPreferences = PreferenceManager.getDefaultSharedPreferences(rootView.getContext());
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("ID_Perfil",temp.getId()).commit();
-                Log.d("aaaaaaaaaaaaaaaa",temp.getId());
                 Intent n = new Intent(getContext(), perfilscreen.class);
                 startActivity(n);
 

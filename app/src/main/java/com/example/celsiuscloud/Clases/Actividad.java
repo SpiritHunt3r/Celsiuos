@@ -2,6 +2,7 @@ package com.example.celsiuscloud.Clases;
 
 public class Actividad {
     private String titulo;
+    private String tipo;
     private String descripcion;
     private String fecha;
     private String hora;
@@ -9,6 +10,14 @@ public class Actividad {
     private String sintoma;
 
     public Actividad() {
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getTitulo() {

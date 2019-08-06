@@ -3,6 +3,10 @@
     package="com.example.celsiuscloud">
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -38,6 +42,22 @@
             android:name=".Pantallas.perfilscreen"/>
         <activity
             android:name=".Pantallas.blescreen"/>
+        <activity
+            android:name=".Pantallas.addnota"/>
+        <activity
+            android:name=".Pantallas.addsintoma"/>
+        <activity
+            android:name=".Pantallas.addtemperatura"/>
+        <activity
+            android:name=".Pantallas.addfoto"/>
+        <activity
+            android:name=".Pantallas.shownota"/>
+        <activity
+            android:name=".Pantallas.showtemperatura"/>
+        <activity
+            android:name=".Pantallas.showsintoma"/>
+        <activity
+            android:name=".Pantallas.showfoto"/>
     </application>
 
 </manifest>
