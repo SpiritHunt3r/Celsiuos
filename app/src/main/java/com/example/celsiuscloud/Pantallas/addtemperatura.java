@@ -53,7 +53,7 @@ public class addtemperatura extends AppCompatActivity {
         a.setTipo("Temperatura");
         a.setFecha(currentDate);
         a.setHora(currentTime);
-
+        a.setFoto("NULL");
         auth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference();
 
@@ -78,7 +78,7 @@ public class addtemperatura extends AppCompatActivity {
             a.setDescripcion(Decp.getText().toString());
             a.setSintoma(spinner.getSelectedItem().toString());
             firebaseUser = auth.getCurrentUser();
-            ref.child("Usuarios").child(firebaseUser.getUid()).child("Familiares").child(id_perfil).child("Actividades").child(a.getHora().concat(a.getFecha().replace('/',' '))).setValue(a).addOnCompleteListener(new OnCompleteListener<Void>() {
+            ref.child("Usuarios").child(firebaseUser.getUid()).child("Familiares").child(id_perfil).child("Actividades").child(a.getFecha().replace('/',' ').concat(a.getHora())).setValue(a).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     Toast.makeText(getApplicationContext(),"Temperatura agregada correctamente",Toast.LENGTH_SHORT).show();

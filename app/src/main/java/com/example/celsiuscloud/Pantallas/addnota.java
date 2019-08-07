@@ -50,7 +50,7 @@ public class addnota extends AppCompatActivity {
         a.setTipo("Nota");
         a.setFecha(currentDate);
         a.setHora(currentTime);
-
+        a.setFoto("NULL");
         auth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference();
     }
@@ -71,7 +71,7 @@ public class addnota extends AppCompatActivity {
             a.setTitulo(Titulo.getText().toString());
             a.setDescripcion(Decp.getText().toString());
             firebaseUser = auth.getCurrentUser();
-            ref.child("Usuarios").child(firebaseUser.getUid()).child("Familiares").child(id_perfil).child("Actividades").child(a.getHora().concat(a.getFecha().replace('/',' '))).setValue(a).addOnCompleteListener(new OnCompleteListener<Void>() {
+            ref.child("Usuarios").child(firebaseUser.getUid()).child("Familiares").child(id_perfil).child("Actividades").child(a.getFecha().replace('/',' ').concat(a.getHora())).setValue(a).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     Toast.makeText(getApplicationContext(),"Nota agregada correctamente",Toast.LENGTH_SHORT).show();

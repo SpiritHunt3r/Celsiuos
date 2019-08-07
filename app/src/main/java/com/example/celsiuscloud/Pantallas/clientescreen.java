@@ -15,6 +15,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.celsiuscloud.Clases.Usuario;
+import com.example.celsiuscloud.Email.MailJob;
 import com.example.celsiuscloud.Fragments.FamiliaresFragment;
 import com.example.celsiuscloud.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -42,6 +43,8 @@ public class clientescreen extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frame_contenedor, new FamiliaresFragment()).commit();
+
+
     }
 
     private void getAvatar(){

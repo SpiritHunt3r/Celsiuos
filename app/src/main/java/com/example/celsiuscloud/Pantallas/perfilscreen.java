@@ -18,6 +18,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.celsiuscloud.Clases.Perfil;
+import com.example.celsiuscloud.Email.MailJob;
 import com.example.celsiuscloud.Fragments.ActividadesFragment;
 import com.example.celsiuscloud.Fragments.FamiliaresFragment;
 import com.example.celsiuscloud.R;
@@ -116,6 +117,12 @@ public class perfilscreen extends AppCompatActivity {
         startActivity(i);
     }
 
+
+    public void sendInfo (View v){
+        new MailJob("Celsiuosinfo@gmail.com", "Ccelsiuos123").execute(
+                new MailJob.Mail("Celsiuosinfo@gmail.com", "juan_jop96@hotmail.com", "subjeto", "contenido")
+        );
+    }
 
 
 }

@@ -42,6 +42,7 @@
     <string name="not_decsc">Sin Descripción</string>
     <string name="add">Añadir</string>
     <string name="add_mem">Añadir Miembro</string>
+    <string name="next">Siguiente</string>
     <string-array name="sintomas">
         <item>DIARREA (AGUDA)</item>
         <item>DIARREA (MODERADO)</item>

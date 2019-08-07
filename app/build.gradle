@@ -33,6 +33,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     implementation 'com.synnapps:carouselview:0.1.5'
     implementation 'io.github.yavski:fab-speed-dial:1.0.6'
-    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.sun.mail:android-mail:1.5.5'
+    implementation 'com.sun.mail:android-activation:1.5.5'
 }
 apply plugin: 'com.google.gms.google-services'
