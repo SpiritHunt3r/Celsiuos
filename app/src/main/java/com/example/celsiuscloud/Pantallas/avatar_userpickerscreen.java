@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -65,7 +66,10 @@ public class avatar_userpickerscreen extends AppCompatActivity {
                         if (task.isSuccessful())
                         {
                             firebaseUser = auth.getCurrentUser();
+                            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                                    .setDisplayName(u.getNombre()).build();
 
+                            firebaseUser.updateProfile(profileUpdates);
                             ref.child("Usuarios").child(firebaseUser.getUid()).child("Personal Info").setValue(u);
                             Toast.makeText(getApplicationContext(),"Usuario creado correctamente",Toast.LENGTH_SHORT).show();
                             finish();

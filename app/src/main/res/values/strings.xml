@@ -41,6 +41,7 @@
     <string name="act_decsc">Descripción</string>
     <string name="not_decsc">Sin Descripción</string>
     <string name="add">Añadir</string>
+    <string name="add_mem">Añadir Miembro</string>
     <string-array name="sintomas">
         <item>DIARREA (AGUDA)</item>
         <item>DIARREA (MODERADO)</item>
@@ -63,5 +64,12 @@
         <item>ESTORNUDOS</item>
         <item>GOTEO NASAL</item>
         <item>DIFICULTAD PARA RESPIRAR</item>
+    </string-array>
+
+    <string-array name="tiposTemp">
+        <item>Ambiente</item>
+        <item>Corporal</item>
+        <item>Tina</item>
+        <item>Comida</item>
     </string-array>
 </resources>

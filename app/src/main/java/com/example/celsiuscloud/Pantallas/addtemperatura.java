@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +32,7 @@ public class addtemperatura extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     private FirebaseAuth auth;
     private DatabaseReference ref;
+    private Spinner spinner;
     private SharedPreferences sharedPref;
 
 
@@ -53,6 +56,12 @@ public class addtemperatura extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference();
+
+        spinner = (Spinner) findViewById(R.id.tipos);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.tiposTemp, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
     }
 
     public void addActivity (View v){
@@ -67,6 +76,7 @@ public class addtemperatura extends AppCompatActivity {
             String id_perfil = sharedPref.getString("ID_Perfil","");
             a.setTitulo(Titulo.getText().toString());
             a.setDescripcion(Decp.getText().toString());
+            a.setSintoma(spinner.getSelectedItem().toString());
             firebaseUser = auth.getCurrentUser();
             ref.child("Usuarios").child(firebaseUser.getUid()).child("Familiares").child(id_perfil).child("Actividades").child(a.getHora().concat(a.getFecha().replace('/',' '))).setValue(a).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override

@@ -47,7 +47,7 @@ public class clientescreen extends AppCompatActivity {
     private void getAvatar(){
         auth = FirebaseAuth.getInstance();
         final FirebaseUser user = auth.getCurrentUser();
-        activo.setText(user.getEmail());
+        activo.setText(user.getDisplayName());
         DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
         myRef.addValueEventListener(new ValueEventListener() {
             @Override

@@ -47,7 +47,7 @@ public class listaActividades extends  BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View vistaItem = layoutInflater.inflate(R.layout.itemfamiliar, parent, false);
+        View vistaItem = layoutInflater.inflate(R.layout.itemactividad, parent, false);
         ImageView tv_imagen = (ImageView) vistaItem.findViewById(R.id.tv_imagen);
         TextView tv_titulo = (TextView) vistaItem.findViewById(R.id.tv_nombre);
         TextView tv_director = (TextView) vistaItem.findViewById(R.id.tv_apellidos);
@@ -68,7 +68,7 @@ public class listaActividades extends  BaseAdapter{
         }
         else if (tipo.equals("Temperatura")){
             tv_imagen.setImageResource(R.drawable.temperatura);
-            tv_titulo.setText(arrayList.get(position).getTitulo()+" ℃");
+            tv_titulo.setText(arrayList.get(position).getTitulo()+" ℃ - " + arrayList.get(position).getSintoma() );
         }
 
         tv_director.setText(arrayList.get(position).getFecha());

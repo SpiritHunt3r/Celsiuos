@@ -5,14 +5,14 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@android:color/white"
     android:orientation="vertical"
     tools:context=".Pantallas.perfilscreen">
 
     <Button
-        android:id="@+id/crearBtn4"
-        android:layout_width="114dp"
-        android:layout_height="46dp"
+        android:id="@+id/crearBtn2"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -25,10 +25,10 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/frame_contenedor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toEndOf="@+id/avatarshows"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763" />
+        app:layout_constraintVertical_bias="0.727" />
 
     <ImageButton
         android:id="@+id/bleBTN"
@@ -61,7 +61,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
@@ -69,11 +69,12 @@
 
     <TextView
         android:id="@+id/activoTxT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:textAlignment="center"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@+id/avatarshows"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +91,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
-        android:background="@color/colorPrimary"
+        android:background="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +117,6 @@
         app:miniFabBackgroundTint="@android:color/white"
         app:miniFabDrawableTint="?attr/colorPrimaryDark"
         app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

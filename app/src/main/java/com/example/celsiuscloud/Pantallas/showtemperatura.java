@@ -50,7 +50,7 @@ public class showtemperatura extends AppCompatActivity {
                 Actividad actual = dataSnapshot.child("Usuarios").child(user.getUid()).child("Familiares").child(perfil).child("Actividades").child(act).getValue(Actividad.class);
                 fecha.setText("Fecha: "+actual.getFecha());
                 hora.setText("Hora: "+actual.getHora());
-                titulo.setText(actual.getTitulo() +" ℃");
+                titulo.setText(actual.getTitulo() +" ℃ - "+actual.getSintoma());
                 descp.setText(actual.getDescripcion());
             }
 
