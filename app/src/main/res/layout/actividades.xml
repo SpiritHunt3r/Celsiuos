@@ -86,7 +86,7 @@
 
     <FrameLayout
         android:id="@+id/frame_contenedor"
-        android:layout_width="0dp"
+        android:layout_width="329dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -111,10 +111,10 @@
         app:fabMenu="@menu/menu_main"
         app:layout_constraintBottom_toBottomOf="@+id/frame_contenedor"
         app:layout_constraintEnd_toEndOf="@+id/frame_contenedor"
-        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bleBTN"
-        app:layout_constraintVertical_bias="0.984"
+        app:layout_constraintVertical_bias="1.0"
         app:miniFabBackgroundTint="@android:color/white"
         app:miniFabDrawableTint="?attr/colorPrimaryDark"
         app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
