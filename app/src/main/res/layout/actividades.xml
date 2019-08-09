@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+    android:onClick="sendInfo"
     android:orientation="vertical"
     tools:context=".Pantallas.perfilscreen">
 
@@ -117,6 +118,26 @@
         app:miniFabBackgroundTint="@android:color/white"
         app:miniFabDrawableTint="?attr/colorPrimaryDark"
         app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="sendInfo"
+        android:scaleType="fitXY"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/frame_contenedor"
+        app:layout_constraintEnd_toStartOf="@+id/avatarshows"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toEndOf="@+id/bleBTN"
+        app:layout_constraintTop_toBottomOf="@+id/activoTxT"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@android:drawable/sym_action_email" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

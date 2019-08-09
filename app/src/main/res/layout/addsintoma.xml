@@ -47,7 +47,7 @@
 
     <Spinner
         android:id="@+id/simple_spinner_item"
-        android:layout_width="401dp"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
@@ -76,7 +76,7 @@
 
     <EditText
         android:id="@+id/desTxt"
-        android:layout_width="401dp"
+        android:layout_width="329dp"
         android:layout_height="154dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,5 +52,15 @@ public class blescreen extends AppCompatActivity {
             Log.d(TAG, "BT already enabled.");
         }
 
+    }
+
+    public void backapp (View v){
+        Intent i = new Intent(blescreen.this, clientescreen.class);
+        startActivity(i);
+    }
+
+    public void nextapp (View v){
+        Intent i = new Intent(blescreen.this, blescreen2.class);
+        startActivity(i);
     }
 }

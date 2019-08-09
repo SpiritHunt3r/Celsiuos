@@ -43,6 +43,10 @@
     <string name="add">Añadir</string>
     <string name="add_mem">Añadir Miembro</string>
     <string name="next">Siguiente</string>
+    <string name="install">Instalar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="BLE2">Instala Celsious.
+    Una forma más inteligente de controlar la salud de tus bebés</string>
     <string-array name="sintomas">
         <item>DIARREA (AGUDA)</item>
         <item>DIARREA (MODERADO)</item>

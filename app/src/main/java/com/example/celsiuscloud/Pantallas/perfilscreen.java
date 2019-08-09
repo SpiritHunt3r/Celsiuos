@@ -1,18 +1,26 @@
 package com.example.celsiuscloud.Pantallas;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.text.InputType;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -34,6 +42,9 @@ import com.google.firebase.database.ValueEventListener;
 import io.github.yavski.fabspeeddial.FabSpeedDial;
 import io.github.yavski.fabspeeddial.SimpleMenuListenerAdapter;
 
+import static androidx.core.os.LocaleListCompat.create;
+import static java.security.AccessController.getContext;
+
 public class perfilscreen extends AppCompatActivity {
 
     private FirebaseAuth auth;
@@ -43,6 +54,7 @@ public class perfilscreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actividades);
+
         getInfo();
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -76,6 +88,7 @@ public class perfilscreen extends AppCompatActivity {
                     Intent i = new Intent(perfilscreen.this, addtemperatura.class);
                     startActivity(i);
                 }
+
 
                 return true;
             }
@@ -119,10 +132,13 @@ public class perfilscreen extends AppCompatActivity {
 
 
     public void sendInfo (View v){
-        new MailJob("Celsiuosinfo@gmail.com", "Ccelsiuos123").execute(
-                new MailJob.Mail("Celsiuosinfo@gmail.com", "juan_jop96@hotmail.com", "subjeto", "contenido")
-        );
+
+        Intent i = new Intent(perfilscreen.this, justemail.class);
+        startActivity(i);
+
     }
+
+
 
 
 }

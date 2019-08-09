@@ -67,4 +67,49 @@ public class Actividad {
     public void setHora(String hora) {
         this.hora = hora;
     }
+
+    @Override
+    public String toString() {
+        if (tipo.equals("Nota")){
+            return "Nota: " +
+                    titulo + '\n' +
+                    "Descripción= " + descripcion + '\n' +
+                    "Fecha= " + fecha + '\n' +
+                    "Hora= " + hora + '\n'+'\n';
+        }
+        else if (tipo.equals("Sintoma")){
+            return "Sintoma: " +
+                    titulo + '\n' +
+                    "Descripción= " + descripcion + '\n' +
+                    "Fecha= " + fecha + '\n' +
+                    "Hora= " + hora + '\n' +'\n' ;
+        }
+        else if (tipo.equals("Foto")){
+            return "Foto: " +
+                    titulo + '\n' +
+                    "Link= " + foto + '\n' +
+                    "Fecha= " + fecha + '\n' +
+                    "Hora= " + hora + '\n' +'\n';
+        }
+        else if (tipo.equals("Temperatura")){
+            return "Temperatura: " +
+                    titulo +" ℃ - " +  sintoma + '\n'+
+                    "Descripción= " + descripcion + '\n' +
+                    "Fecha= " + fecha + '\n' +
+                    "Hora= " + hora + '\n' + '\n';
+        }
+        else{
+            return "Actividad: " +
+                    "Título= " + titulo + '\n' +
+                    ", Descripción='" + descripcion + '\n' +
+                    ", fecha='" + fecha + '\n' +
+                    ", hora='" + hora + '\n' +
+                    ", foto='" + foto + '\n' +
+                    ", sintoma= " + sintoma + '\n' +
+                    '}';
+        }
+
+
+
+    }
 }

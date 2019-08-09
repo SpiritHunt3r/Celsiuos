@@ -43,6 +43,8 @@
         <activity
             android:name=".Pantallas.blescreen"/>
         <activity
+            android:name=".Pantallas.blescreen2"/>
+        <activity
             android:name=".Pantallas.addnota"/>
         <activity
             android:name=".Pantallas.addsintoma"/>
@@ -58,6 +60,8 @@
             android:name=".Pantallas.showsintoma"/>
         <activity
             android:name=".Pantallas.showfoto"/>
+        <activity
+            android:name=".Pantallas.justemail"/>
     </application>
 
 </manifest>

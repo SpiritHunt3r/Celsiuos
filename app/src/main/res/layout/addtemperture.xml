@@ -60,7 +60,7 @@
 
     <EditText
         android:id="@+id/tituloTxt"
-        android:layout_width="401dp"
+        android:layout_width="329dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -79,7 +79,7 @@
 
     <EditText
         android:id="@+id/desTxt"
-        android:layout_width="401dp"
+        android:layout_width="329dp"
         android:layout_height="154dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -133,7 +133,7 @@
 
     <Spinner
         android:id="@+id/tipos"
-        android:layout_width="0dp"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -141,8 +141,7 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloTxt"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintVertical_bias="0.08" />
 </androidx.constraintlayout.widget.ConstraintLayout>

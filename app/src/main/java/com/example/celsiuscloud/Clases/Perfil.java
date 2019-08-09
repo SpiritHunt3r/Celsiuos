@@ -91,4 +91,15 @@ public class Perfil {
     public void setId(String id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Perfil" + '\n' +
+                "nombre = " + nombre + " " + apellidos + '\n' +
+                "fecha de nacimiento= " + fecha + '\n' +
+                "sexo= " + sexo + '\n' +
+                "estatura= " + estatura + '\n' +
+                "peso= " + peso + '\n' + '\n' +
+                "****Actividades****\n\n\n";
+    }
 }

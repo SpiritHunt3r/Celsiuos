@@ -41,7 +41,7 @@
 
     <EditText
         android:id="@+id/tituloTxt"
-        android:layout_width="401dp"
+        android:layout_width="329dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -61,7 +61,7 @@
 
     <EditText
         android:id="@+id/desTxt"
-        android:layout_width="401dp"
+        android:layout_width="329dp"
         android:layout_height="154dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
